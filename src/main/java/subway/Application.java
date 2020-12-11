@@ -1,8 +1,7 @@
 package subway;
 
-import subway.domain.Station;
-import subway.view.InputView;
-import subway.view.OutputView;
+import subway.domain.station.Station;
+import subway.domain.station.StationRepository;
 
 import java.util.Scanner;
 
@@ -13,6 +12,7 @@ public class Application {
         // TODO: 프로그램 구현
 
 //        System.out.println(InputView.getMainMenuCommand(scanner));
-        System.out.println(Station.stationCheck(scanner.nextLine()));
+//        System.out.println(Station.stationCheck(scanner.nextLine()));
+        System.out.println(StationRepository.findStationName(scanner.nextLine()));
     }
 }
