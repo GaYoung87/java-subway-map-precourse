@@ -1,5 +1,6 @@
 package subway;
 
+import subway.domain.Station;
 import subway.view.InputView;
 import subway.view.OutputView;
 
@@ -11,6 +12,7 @@ public class Application {
         final Scanner scanner = new Scanner(System.in);
         // TODO: 프로그램 구현
 
-        System.out.println(InputView.getMainMenuCommand(scanner));
+//        System.out.println(InputView.getMainMenuCommand(scanner));
+        System.out.println(Station.stationCheck(scanner.nextLine()));
     }
 }

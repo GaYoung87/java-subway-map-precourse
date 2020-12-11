@@ -12,6 +12,13 @@ public class StationRepository {
         return Collections.unmodifiableList(stations);
     }
 
+    public static void save(Station station) {
+        if (stations.contains(station)) {
+            System.out.println("[ERROR] 이미 등록된 역 이름입니다. 중복되지 않는 역이름을 입력해주세요.");
+        }
+        stations.add(station);
+    }
+
     public static void addStation(Station station) {
         stations.add(station);
     }
