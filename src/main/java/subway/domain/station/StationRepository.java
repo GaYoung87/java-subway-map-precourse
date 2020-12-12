@@ -5,6 +5,7 @@ import java.util.*;
 public class StationRepository {
     private static final List<Station> stations = new ArrayList<>();
     private final String DUPLICATE_STATION_ERROR_MESSAGE = "[ERROR] 이미 등록된 역 이름입니다. 중복되지 않는 역이름을 입력해주세요.";
+    private static final String INFO="[INFO] ";
 
     public List<Station> stations() {
         return Collections.unmodifiableList(stations);
@@ -28,5 +29,13 @@ public class StationRepository {
 
     public boolean deleteStation(String name) {
         return stations.removeIf(station -> Objects.equals(station.getName(), name));
+    }
+
+    public static void printAllStation(){
+        stations.forEach(station -> printInfo(station.getName()));
+    }
+
+    public static void printInfo(String info){
+        System.out.println(INFO+info);
     }
 }
