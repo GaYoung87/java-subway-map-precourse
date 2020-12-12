@@ -1,15 +1,13 @@
 package subway.domain.line;
 
 public class Line {
-    private String name;
+    private final LineCheck lineName;
 
-    public Line(String name) {
-        this.name = name;
+    public Line(final String lineName) {
+        this.lineName = new LineCheck(lineName);
     }
 
     public String getName() {
-        return name;
+        return lineName.getName();
     }
-
-    // 추가 기능 구현
 }
