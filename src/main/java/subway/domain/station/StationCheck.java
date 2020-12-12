@@ -20,9 +20,8 @@ public class StationCheck extends Validator {
         return stationName;
     }
 
-    @Override
-    public void validate(String station) {
-        super.validate(station);
+    public void isStationOkay(String station) {
+        Validator.validate(station);
         checkStationLength(station);
         checkStationEndPoint(station);
     }
