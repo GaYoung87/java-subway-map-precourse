@@ -19,7 +19,7 @@
    - 신분당선: 강남역 - 양재역 - 양재시민의숲역
 ```
 
-<img src="image/domain.png" width="500">
+<img src="../image/domain.png" width="500">
 
 ### 지하철 역 관련 기능
 - 지하철 역을 등록하고 삭제할 수 있다. (단, 노선에 등록된 역은 삭제할 수 없다)
@@ -41,14 +41,14 @@
 - 역과 역 사이에 새로운 역이 추가 될 수 있다.
 - 노선에서 갈래길은 생길 수 없다.
 
-<img src="image/section1.png" width="500">
+<img src="../image/section1.png" width="500">
 
 ### 지하철 구간 삭제 기능
 - 노선에 등록된 역을 제거할 수 있다.
 - 종점을 제거할 경우 다음 역이 종점이 된다.
 - 노선에 포함된 역이 두개 이하일 때는 역을 제거할 수 없다.
 
-<img src="image/section2.png" width="500">
+<img src="../image/section2.png" width="500">
 
 ### 지하철 노선에 등록된 역 조회 기능
 - 노선의 상행 종점부터 하행 종점까지 연결된 순서대로 역 목록을 조회할 수 있다.

@@ -1,4 +1,4 @@
-package subway.domain.station;
+package subway.view;
 
 public class Validator {
     static final String NULL_ERROR_MESSAGE = "null 값을 입력하셨습니다.";
