@@ -1,17 +1,16 @@
 package subway;
 
-import subway.view.OutputView;
+import subway.domain.station.Station;
 
 import java.util.Scanner;
 
 public class Application {
+
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
         // TODO: 프로그램 구현
-
-        while (true) {
-            OutputView.printMainMenu();
-            break;
-        }
+        System.out.println("start");
+        String name = scanner.nextLine();
+        System.out.println(new Station(name).getName());
     }
 }
