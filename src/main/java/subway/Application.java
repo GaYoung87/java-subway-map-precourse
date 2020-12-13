@@ -14,6 +14,6 @@ public class Application {
         String name = scanner.nextLine();
 //        System.out.println(new Station(name).getName());
 //
-        System.out.println(new StationRepository().addCheck(new Station(name)));
+//        System.out.println(new StationRepository().addStation(new Station(name)));
     }
 }
